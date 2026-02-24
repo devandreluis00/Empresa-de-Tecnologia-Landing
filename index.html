@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Tecnologia - Soluções Digitais Modernas</title>
+    <meta name="description"content="Empresa de Tecnologia: Desenvolvimento web, sistemas personalizados, automação e consultoria tech. Transformamos ideias em soluções digitais inovadoras.">
+    <meta name="keywords"content="Desenvolvimento Web, Sistemas Personalizados, Automação, Consultoria Tech, Soluções Digitais, Empresa de Tecnologia">
+    <meta name="author" content="Empresa de Tecnologia">
+    <meta property="og:title" content="Empresa de Tecnologia - Soluções Digitais Modernas">
+    <meta property="og:description" content="Transformamos ideias em soluções digitais modernas e eficientes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.empresatecnologia.com">
+    <meta property="og:image" content="https://www.empresatecnologia.com/og-image.png">
+    <link rel="canonical" href="https://www.empresatecnologia.com">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "EmpresaTecnologia",
+      "image": "https://www.empresatecnologia.com/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Exemplo, 123",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01000-000",
+        "addressCountry": "BR"
+      },
+      "telephone": "+5511999999999",
+      "email": "contato@empresatecnologia.com",
+      "url": "https://www.empresatecnologia.com"
+    }
+    </script>
+</head>
+
+<body class="dark">
+    <header>
+        <h1>Empresa de Tecnologia</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+            <button id="toggleTheme" aria-label="Alternar Tema">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background" aria-hidden="true"></div>
+            <div class="hero-content">
+                <h2>Transformando Ideias em Código</h2>
+                <p>Criamos soluções digitais modernas que conectam tecnologia e negócios.</p>
+                <button class="btn" onclick="scrollContato()">Comece Agora</button>
+            </div>
+        </section>
+
+        <section id="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <p>
+                Na Empresa de Tecnologia, transformamos ideias em soluções digitais inovadoras. 
+                Nosso foco é desenvolver software, sistemas web e aplicativos mobile que atendam às necessidades 
+                específicas de cada negócio, sempre priorizando qualidade, eficiência e experiência do usuário.
+            </p>
+            <p>
+                Com uma equipe de especialistas em desenvolvimento, automação, inteligência artificial, 
+                cloud computing e cibersegurança, oferecemos soluções completas para modernizar processos, 
+                aumentar a produtividade e garantir a segurança das operações.
+            </p>
+            <p>
+                Nosso compromisso é acompanhar o seu crescimento, fornecendo tecnologia estratégica 
+                que impulsiona resultados e inovação contínua.
+            </p>
+        </section>
+
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites modernos, responsivos e otimizados para performance.</p>
+                </article>
+                <article class="card">
+                    <h3>Sistemas Personalizados</h3>
+                    <p>Soluções sob medida para automatizar e otimizar processos.</p>
+                </article>
+                <article class="card">
+                    <h3>Consultoria Tech</h3>
+                    <p>Orientação estratégica para tecnologia e inovação no seu negócio.</p>
+                </article>
+                <article class="card">
+                    <h3>Automação</h3>
+                    <p>Automatizamos tarefas repetitivas, aumentando produtividade e eficiência.</p>
+                </article>
+                <article class="card">
+                    <h3>Inteligência Artificial</h3>
+                    <p>Desenvolvemos soluções de IA para análise de dados e processos inteligentes.</p>
+                </article>
+                <article class="card">
+                    <h3>Cloud Computing</h3>
+                    <p>Infraestrutura na nuvem para maior escalabilidade, segurança e flexibilidade.</p>
+                </article>
+                <article class="card">
+                    <h3>Desenvolvimento Mobile</h3>
+                    <p>Aplicativos nativos e híbridos para iOS e Android, otimizados para usuários.</p>
+                </article>
+                <article class="card">
+                    <h3>Cibersegurança</h3>
+                    <p>Protegemos seus dados e sistemas contra ameaças e vulnerabilidades.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="formContato">
+                <label for="nome" class="sr-only">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="mensagem" class="sr-only">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+
+                <button class="btn" type="submit">Enviar</button>
+                <p class="form-msg" aria-live="polite"></p>
+            </form>
+
+            <div class="info">
+                <p>📧 <strong>Email:</strong> contato@empresatecnologia.com</p>
+                <p>📞 <strong>Telefone:</strong> (11) 99999-9999</p>
+                <p>📍 <strong>Localização:</strong> São Paulo, SP</p>
+            </div>
+        </section>
+
+        <section id="localizacao">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps?q=São+Paulo,+SP&output=embed" loading="lazy"
+                title="Mapa de localização da Empresa de Tecnologia">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 • Desenvolvido por André — Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
